@@ -1,13 +1,12 @@
 
 import request from 'supertest'
-import { uri } from '..'
-
+import app from '../lib'
 
 
 describe("Testing if server working", () => {
 
   test("should accessable route /hello", async () => {
-    const response = await request(uri).get("/hello")
+    const response = await request(app).get("/hello")
     // console.log(response.body)
     expect(response.body).toHaveProperty("data")
     expect(response.status).toBe(200)
