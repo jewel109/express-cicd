@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest ",
-    "start": " nodemon index.ts"
+    "test": "jest",
+    "local:test": "jest --watchAll",
+    "start": "nodemon index.ts"
   },
   "dependencies": {
     "@types/bcrypt": "^5.0.2",
