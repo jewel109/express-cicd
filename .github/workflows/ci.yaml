@@ -16,7 +16,7 @@ jobs:
       - name: pnpm adding
         uses: pnpm/action-setup@0609f0983b7a228f052f81ef4c3d6510cae254ad
         with:
-          version: 6.10.0
+          version: "9.7.1"
       - name: setup nodejs
         uses: actions/setup-node@v4
         with:
