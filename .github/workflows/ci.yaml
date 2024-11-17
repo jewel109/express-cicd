@@ -22,10 +22,8 @@ jobs:
         with:
           node-version: "22"
           cache: "pnpm"
-
       - name: install dependencies
         run: pnpm install
-
       - name: Run Tests
         run: pnpm run test
 # - name: Upload test results (optional)
